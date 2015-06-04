@@ -1,0 +1,57 @@
+North American Aviation T-2 Buckeye
+
+This is a conversion/upgrade of Kirk Olsson's T-2 Buckeye for FS2000.  I came across this little plane and was immediately taken by its looks...for some reason I just like this little plane.  And being a big admirer of trainers, it was doubly nice to find this plane.  I made several attempts to get the MDL to run through MDLconvert, with no success.  So I went looking for other T-2 Buckeyes...only to find that there is only one other freeware T-2 Buckeye available, and that is by Mr. Ito for FS2004.
+
+The AIR and Config files used in this pack are from Jim Jacobson's A-37 Dragonfly, and used with his permission.  Nice plane.  If you do not have it, get it from Simviation.com.  He has two versions uploaded there...one with 512 by 512 textures and one with 256 by 256 size textures for better frame rates.  I modified the air and config files to get the T-2 as close to real handling and speed as I could with my ever so limited skills in tweaking air and config files.
+
+The weapons used on this plane are part of the US Modern Weapons pack by Kotaro Akikawa and Chris Coarse.  In keeping with their read me file, I am not including the weapons pack with this plane.  You can find the weapons pack here:  
+
+http://simviation.com/bonzonie/files/US_modernwep_V1.zip
+
+or at Flightsim.com.  Search for Modwep.zip.
+
+The panel used in this plane, which I downloaded from Simviation.com, is by Romulus 111VADT.  I have made extensive modifications to the panel setup, namely removing a lot of gauges to increase frame rate, adding the canopy frame to better simulate the view from the T-2's front seat, and adding the GPS and auto-pilot window.  I also removed all the various bmp files that were used for the various view (right, left, backward) to reduce the size of the panel and to reduce the frame rate hit these panels caused.  To make my life a little easier, I have included all the gauges that came with this panel, even though some of them are no longer used.
+
+The rear seat pilot is Tango Romeo's Sid Pilot...available in the Combatfs.com download library.
+
+************NOTE************
+
+One of the payloads on this plane are two M2 .50 calibre gun pods.  Not having a modeled version of these, I hacked together a set using 108 gallon drop tanks (can't remember which plane they came with...it was a P-47 though) and the 1tube addon by cfs2area51.  The Object DP, BGL and texture files for these are located in the Gun Pods folder.  Install them as you normally would....ObjectDp to ObjectDp, Weapons/scenery to scenedb/weapons/scenery and weapons/texture to scenedp/weapons/texture.  Move the files into the needed folders, not the folder that they are contained in in this upload.
+
+******************************
+
+Thank You's
+
+Firstly to Kirk Olsson for making this plane and for being so generous with his work.  If you have read many of his read me files, then you know that he pretty much invites people to enhance, tweak, modify and improve his planes...as long as he is given credit and the work remains freeware.  
+
+Secondly to Jim Jacobson for allowing me to use his files in this plane.  Without those files, this plane would would not be flying.
+
+Thanks to Romulus for creating such a sharp panel.  Although I modified it from its stock form, the quality of the panel in this plane is a testiment to how nice the full panel package is.
+
+To Kotaro and chris for the weapons pack....very nice work gents.
+
+
+To Jag for testing this plane and confirming the problems I was encountering.
+
+****** A VERY SPECIAL THANK YOU ******
+
+To Tango Romeo, who fixed a number of problems in this plane that were beyond my current ability to deal with.  Without his involvment, this plane would not be a nice as it is.  I had it close in most areas, but in some areas, this plane was seriously screwed!  
+
+Tango, one day, I swear, I will know how to do this stuff and will leave you in peace.
+
+*********************************
+
+LEGAL MUBMO JUMBO
+
+This plane is freeware.  Do not make money off of it.  Do not upload it to any site that charges a fee for membership or for downloading files.  Do not include it on any CD, DVD or in any compilation for finiancial gain in any way.
+
+The original copyright of Kirk Olsson still stands and is paramount in terms of this package.
+
+Use at your own risk.  No one involved with this package, either directly or indirectly, is responsible or liable for any damages (real or imagined) that you may face as a result of your use of these files.
+
+*********************************
+
+
+As always, thanks for checking out my stuff.  Enjoy!
+
+OBIO

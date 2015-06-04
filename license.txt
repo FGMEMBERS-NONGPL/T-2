@@ -1,0 +1,10 @@
+License:  Creative Commons CC-BY-NC-SA.  See the original licenses in the Docs directory.
+
+This model is converted for use in FlightGear.
+
+
+David Culp
+davidculp@cox.net
+
+
+ 
