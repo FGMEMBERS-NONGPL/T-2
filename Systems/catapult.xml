@@ -2,6 +2,8 @@
 
 <system name="catapult">
 
+  <property value="0">systems/catapult/cat-pos-norm</property>
+
   <channel name="Catapult">
 
        <switch name="systems/catapult/cat-cmd-norm">

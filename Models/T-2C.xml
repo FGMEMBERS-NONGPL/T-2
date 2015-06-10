@@ -90,9 +90,18 @@
  <model>
   <path>Aircraft/T-2/Models/Gear/gear.xml</path>
   <offsets>
-   <x-m>-2.47</x-m>
+   <x-m>-2.475</x-m>
    <y-m>-0.32</y-m>
    <z-m>0.375</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/DavePack/Instruments/Gear/park-brake-light.xml</path>
+  <offsets>
+   <x-m>-2.475</x-m>
+   <y-m>-0.29</y-m>
+   <z-m> 0.41</z-m>
   </offsets>
  </model>
 
@@ -350,8 +359,8 @@
   <type>rotate</type>
   <object-name>NoseGearLower</object-name>
   <object-name>NoseTire</object-name>
-  <property>sim/multiplay/generic/float[1]</property>
-  <factor>60</factor>
+  <property>sim/multiplay/generic/float[2]</property>
+  <factor>1</factor>
   <center>
    <x-m>-2.75</x-m>
    <y-m>-0.09</y-m>
@@ -368,7 +377,7 @@
   <type>spin</type>
   <object-name>NoseTire</object-name>
   <property>fdm/jsbsim/gear/unit[0]/wheel-speed-fps</property>
-  <factor>68.48</factor>
+  <factor>11</factor>
   <center>
    <x-m>-2.687</x-m>
    <y-m>0</y-m>
@@ -447,7 +456,7 @@
   <type>spin</type>
   <object-name>LMainTire</object-name>
   <property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
-  <factor>52.92</factor>
+  <factor>8.5</factor>
   <center>
    <x-m>1.428</x-m>
    <y-m>-2.71</y-m>
@@ -526,7 +535,7 @@
   <type>spin</type>
   <object-name>RMainTire</object-name>
   <property>fdm/jsbsim/gear/unit[1]/wheel-speed-fps</property>
-  <factor>52.92</factor>
+  <factor>8.5</factor>
   <center>
    <x-m>1.428</x-m>
    <y-m>2.71</y-m>

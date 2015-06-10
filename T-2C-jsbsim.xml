@@ -64,8 +64,8 @@
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       6000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  2000.00 </damping_coeff>
-   <max_steer unit="DEG"> 65.00 </max_steer>
+   <damping_coeff unit="LBS/FT/SEC">  6000.00 </damping_coeff>
+   <max_steer unit="DEG"> 60.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -79,9 +79,8 @@
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
-   <spring_coeff unit="LBS/FT">      19000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  4000.00 </damping_coeff>
-   <max_steer unit="DEG">0</max_steer>
+   <spring_coeff unit="LBS/FT">      12000.00 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC">  6000.00 </damping_coeff>
    <brake_group>LEFT</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -95,61 +94,64 @@
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
    <rolling_friction> 0.02 </rolling_friction>
-   <spring_coeff unit="LBS/FT">      19000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC">  4000.00 </damping_coeff>
-   <max_steer unit="DEG">0</max_steer>
+   <spring_coeff unit="LBS/FT">      12000.00 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC">  6000.00 </damping_coeff>
    <brake_group>RIGHT</brake_group>
    <retractable>1</retractable>
  </contact>
-
-  <contact type="STRUCTURE" name="LEFT_WING">
+<!--
+ <contact type="STRUCTURE" name="LEFT_WING">
     <location unit="IN">
-     <x> 280.00 </x>
+     <x> 240.00 </x>
      <y>-219.50 </y>
      <z> 0 </z>
     </location>
-    <static_friction>  0.80 </static_friction>
-    <dynamic_friction> 0.50 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      20000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 14000.00 </damping_coeff>
+    <static_friction>  1 </static_friction>
+    <dynamic_friction> 1 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 8000.00 </damping_coeff>
+    <damping_coeff_rebound unit="LBS/FT/SEC">80000.00 </damping_coeff_rebound>
  </contact>
 
   <contact type="STRUCTURE" name="RIGHT_WING">
     <location unit="IN">
-     <x> 280.00 </x>
+     <x> 240.00 </x>
      <y> 219.50 </y>
      <z> 0 </z>
     </location>
-    <static_friction>  0.80 </static_friction>
-    <dynamic_friction> 0.50 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      20000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 14000.00 </damping_coeff>
+    <static_friction>  1 </static_friction>
+    <dynamic_friction> 1 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 8000.00 </damping_coeff>
+    <damping_coeff_rebound unit="LBS/FT/SEC">80000.00 </damping_coeff_rebound>
  </contact>
 
   <contact type="STRUCTURE" name="AFT_FUSELAGE">
     <location unit="IN">
      <x> 384 </x>
      <y>   0 </y>
-     <z> -20 </z>
+     <z>   0 </z>
     </location>
-    <static_friction>  0.80 </static_friction>
-    <dynamic_friction> 0.50 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      20000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 14000.00 </damping_coeff>
+    <static_friction>  1 </static_friction>
+    <dynamic_friction> 1 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 8000.00 </damping_coeff>
+    <damping_coeff_rebound unit="LBS/FT/SEC">80000.00 </damping_coeff_rebound>
  </contact>
 
   <contact type="STRUCTURE" name="FWD_FUSELAGE">
     <location unit="IN">
      <x>  30 </x>
      <y>   0 </y>
-     <z> -20 </z>
+     <z>   0 </z>
     </location>
-    <static_friction>  0.80 </static_friction>
-    <dynamic_friction> 0.50 </dynamic_friction>
-    <spring_coeff unit="LBS/FT">      20000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 14000.00 </damping_coeff>
+    <static_friction>  1 </static_friction>
+    <dynamic_friction> 1 </dynamic_friction>
+    <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 8000.00 </damping_coeff>
+    <damping_coeff_rebound unit="LBS/FT/SEC">80000.00 </damping_coeff_rebound>
  </contact>
-
+-->
  </ground_reactions>
 
  <propulsion>
@@ -277,7 +279,7 @@
             <tableData>
               -0.20 -0.620
                0.00  0.120
-               0.26  1.100
+               0.26  1.110
                0.60  0.448
             </tableData>
           </table>
@@ -345,7 +347,7 @@
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
                 0.00      0.000
-                0.75      0.000
+                0.68      0.000
                 1.10      0.028
                 1.80      0.015
             </tableData>
@@ -369,7 +371,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>gear/gear-pos-norm</property>
-           <value>0.035</value>
+           <value>0.037</value>
          </product>
     </function>
 

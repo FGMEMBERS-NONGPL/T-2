@@ -22,6 +22,16 @@ License:  Creative Commons, CC-BY-NC-SA
    <splash-texture>Aircraft/T-2/T-2C-splash.png</splash-texture>
   </startup>
 
+  <systems>
+   <refuel>
+     <contact type="bool">false</contact>
+     <type>probe</type>
+   </refuel>
+      <autopilot>
+         <path>Aircraft/T-2/Systems/autopilot5.xml</path>
+      </autopilot>
+   </systems>
+
   <sound>
     <path>Aircraft/T-2/Sounds/sound.xml</path> 
   </sound>
@@ -178,6 +188,24 @@ License:  Creative Commons, CC-BY-NC-SA
       </binding>
     </key>
 
+    <key n="115">
+     <name>s</name>
+     <desc>Toggle starter valves.</desc>
+     <binding>
+       <command>property-toggle</command>
+       <property>controls/engines/engine[0]/starter</property>
+     </binding>
+     <binding>
+       <command>property-toggle</command>
+       <property>controls/engines/engine[1]/starter</property>
+     </binding>
+     <mod-up>
+       <binding>
+         <command>null</command>
+       </binding>
+     </mod-up>
+    </key>
+
    <key n="67">
      <name>Shift-C</name>
      <desc>Release parking brake, release holdback, fire catapult.</desc>
@@ -198,14 +226,33 @@ License:  Creative Commons, CC-BY-NC-SA
      </binding>
     </key>
 
-  <key n="32">
-   <name>SPACE</name>
-   <desc>Release fuel tanks</desc>
-    <binding>
-     <command>property-assign</command>
-     <property>fdm/jsbsim/systems/armament/release</property>
-     <value>1</value>
-    </binding>
+    <key n="81">
+     <name>Shift-Q</name>
+     <desc>Fuel Cutoff Switches.</desc>
+     <binding>
+      <condition>
+       <property>/sim/input/selected/engine[0]</property>
+      </condition>
+      <command>property-toggle</command>
+      <property>controls/engines/engine[0]/cutoff</property>
+     </binding>
+     <binding>
+      <condition>
+       <property>/sim/input/selected/engine[1]</property>
+      </condition>
+      <command>property-toggle</command>
+      <property>controls/engines/engine[1]/cutoff</property>
+     </binding>
+    </key>
+
+    <key n="101">
+     <name>e</name>
+     <desc>Release tip tanks</desc>
+      <binding>
+       <command>property-assign</command>
+       <property>fdm/jsbsim/systems/armament/release</property>
+       <value>1</value>
+      </binding>
     <binding>
      <command>property-assign</command>
      <property>consumables/fuel/tank[1]/level-gal_us</property>
@@ -216,7 +263,14 @@ License:  Creative Commons, CC-BY-NC-SA
      <property>consumables/fuel/tank[2]/level-gal_us</property>
      <value>0</value>
     </binding>
-   </key>
+     <mod-up>
+       <binding>
+        <command>property-assign</command>
+        <property>fdm/jsbsim/systems/armament/release</property>
+        <value>0</value> 
+       </binding>
+     </mod-up>
+    </key>
 
  </keyboard>
 </input>
@@ -224,18 +278,12 @@ License:  Creative Commons, CC-BY-NC-SA
  <fdm>
   <jsbsim>
    <systems>
-    <hook>
-      <tailhook-cmd-norm type="double">0</tailhook-cmd-norm> 
-    </hook>
     <holdback>
       <holdback-cmd type="double">0</holdback-cmd>
     </holdback>
     <dump>
       <armed type="double">0</armed>
     </dump>
-    <NWS>
-      <engaged type="double">0</engaged>
-    </NWS>
     <reverser>
       <command type="double">0</command>
     </reverser>
